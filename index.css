@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    background-color: rgb(129, 191, 218);
+    height: 450px;
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    border: solid black;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5, 20%);
+}
+
+h1{
+    text-align: center;
+    color: rgb(245, 240, 205);
+    padding: 10px;
+    font-family: 'Winky Rough';
+    grid-row-start: 1;
+    grid-column: 2 / span 3;
+}
+
+.navigation{
+    display: flex;
+    width: 50%;
+    position: absolute;
+    background-color: black;
+    color: rgb(245, 240, 205);
+    height: 25px;
+    border-radius: 5px;
+    align-items: center;
+    font-family: 'Winky Rough';
+    justify-content: space-between;
+    padding-left: 2px;
+}
+
+.navigation > img{
+    padding-right: 2px;
+}
+
+.grass{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(250, 218, 122);
+    margin-top: -15px;
+}
+
+.beach-box{
+    display: flex;
+    justify-content: space-between;
+    margin: 0%;
+    padding: 0%;
+    align-items: baseline;
+    margin-top: -130px;
+}
+
+.beach-box > img{
+    padding-left: 30px;
+    padding-right: 70px;
+    padding-bottom: 0%;
+}
+
+.sun-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: -100px;
+}
+
+.sun-box > img{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#profile-img{
+    grid-column-start: 3;
+    grid-row-start: 3;
+    height: 100px;
+    align-self: center;
+    justify-self: center;
+}
+
+#skill-book{
+    display: flex;
+    grid-column: 1 / span 5;
+    grid-row-start: 2;
+    justify-content: space-around;
+}
+
+#art-writing{
+    display: flex;
+    grid-column: 1 / span 5;
+    grid-row-start: 4;
+    justify-content: space-around;
+}
+
+.waves{
+    height: 428px;
+    grid-column: 1 / span 5;
+    background-image: url("./Home_img/wave1.svg");
+    background-size: cover;
+    grid-row-start: 1;
+    animation-name: waves;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-top: 20px;
+    background-repeat: no-repeat;
+}
+
+@keyframes waves{
+    0%{background-image: url("./Home_img/wave2.svg"); background-size: cover; background-repeat: no-repeat;}
+    20%{background-image: url("./Home_img/wave3.svg"); background-size: cover; background-repeat: no-repeat;}
+    40%{background-image: url("./Home_img/wave4.svg"); background-size: cover; background-repeat: no-repeat;}
+    60%{background-image: url("./Home_img/wave5.svg"); background-size: cover; background-repeat: no-repeat;}
+    80%{background-image: url("./Home_img/wave6.svg"); background-size: cover; background-repeat: no-repeat;}
+    100%{background-image: url("./Home_img/wave1.svg"); background-size: cover; background-repeat: no-repeat;}
+}
+
+.btn{
+    opacity: 0.95;
+    transition: 0.3s;
+    background-color: rgb(129, 191, 218);
+    margin: 0%;
+    border: 0;
+}
+
+.btn :hover {opacity: 0.6;}
+
+
+.sun-box :hover {opacity: 0.6;}
+
+@media only screen and (max-width: 900px){
+    .sun-box > img{
+        padding-left: 20px;
+    }
+    .beach-box{
+        margin-top: -30px;
+    }
+    .beach-res-1{
+        height: 150px;
+    }
+    .beach-res-2{
+        height: 100px;
+    }
+    .beach-box > img{
+        padding-left: 20px;
+        padding-right: 50px;
+        padding-bottom: 0%;
+    }
+    .container{
+        height: 350px;
+    }
+    .navigation{
+        height: 20px;
+    }
+    h1{
+        font-size: large;
+    }
+    #skill{
+        height: 50px;
+    }
+    #book{
+        height: 50px;
+    }
+    #profile{
+        height: 65px;
+        padding-top: 10px;
+    }
+    #art{
+        height: 50px;
+    }
+    #writing{
+        height: 50px;
+    }
+    .btn{
+        height: 65px;
+    }
+    .waves{
+        height: 328px;
+    }
+}

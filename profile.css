@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(129, 191, 218);
+}
+
+.header{
+    background-image: url("./profile_img/Profile_header.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    height: 200px;
+    width: 100%;
+}
+
+.header > h1{
+    font-family: 'Marmelad';
+    font-size: 52pt;
+    text-align: center;
+    padding-top: 10px;
+}
+
+p{
+    font-family: 'Marmelad';
+    font-size: 20pt;
+    text-align: justify;
+    padding: 25px;
+    line-height: 42pt;
+}
+
+.contacts{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.contacts > img{
+    padding: 15px;
+}
+
+button{
+    background-color: rgb(129, 191, 218);
+    opacity: 1;
+    transition: 0.3s;
+    border:0;
+    margin: 0;
+}
+
+button:hover{opacity: 0.6;}

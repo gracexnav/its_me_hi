@@ -1,0 +1,115 @@
+body{
+    background-image: linear-gradient(to right, rgb(116, 155, 194), rgb(255, 251, 222));
+}
+
+*{
+    font-family: 'Marmelad';
+}
+
+h1{
+    font-size: 64pt;
+    position: absolute;
+    top: 200px;
+    left: 800px;
+    text-align: left;
+}
+
+.software{
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    background-color: rgb(87, 153, 182);
+    rotate: -30deg;
+    top: 200px;
+    margin: 0%;
+    padding: 0%;
+    left: 0px;
+    border-radius: 5px;
+}
+
+.Tools{
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    background-color: rgb(101, 176, 209);
+    rotate: -10deg;
+    top: 290px;
+    margin: 0%;
+    padding: 0%;
+    left: 12px;
+    border-radius: 5px;
+}
+
+.areas_of_interest{
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    background-color: rgb(129, 191, 218);
+    rotate: 10deg;
+    top: 380px;
+    margin: 0%;
+    padding: 0%;
+    left: 0px;
+    border-radius: 5px;
+}
+
+.hobbies{
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    background-color: rgb(177, 240, 247);
+    rotate: 30deg;
+    top: 460px;
+    margin: 0%;
+    padding: 0%;
+    left: -30px;
+    border-radius: 5px;
+}
+
+#stack{
+    display: flex;
+    width: 500px;
+    justify-self: flex-end;
+    align-self: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.cards{
+    background-color: rgb(245, 240, 205);
+    border-radius: 50px;
+    width: 80px;
+    padding: 5px;
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 5px;
+    border: outset 2px rgb(250, 218, 122);
+}
+
+.para{
+    padding: 10px;
+}
+
+.cards:hover{opacity: 0.6;}
+
+@media only screen and (max-width: 900px){
+    h1{
+        font-size: 40pt;
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        text-align: left;
+    }
+    .software{
+        width: 460px;
+    }
+    .areas_of_interest{
+        width: 460px;
+    }
+    .Tools{
+        width: 460px;
+    }
+    .hobbies{
+        width: 460px;
+    }
+}

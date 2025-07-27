@@ -1,0 +1,57 @@
+*{
+    font-family:'Courier Prime';
+}
+
+h1{
+    margin: 10px;
+    padding: 20px;
+    font-size: 38pt;
+}
+
+ul{
+    padding-left: 50px;
+    margin: 10px;
+}
+
+ol{
+    padding-left: 50px;
+    margin: 10px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('./Articles_img/Bg_Article.png');
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+
+h2{
+    padding-left: 15px;
+}
+
+p{
+    padding-left: 50px;
+    padding-right: 100px;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+@media only screen and (max-width: 600px){
+    h1{
+        margin: 5px;
+        padding: 10px;
+        font-size: 26pt;
+    }
+
+    p{
+        padding-left: 20px;
+        padding-right: 40px;
+    }
+}
