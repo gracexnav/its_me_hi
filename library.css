@@ -73,3 +73,27 @@ li{
     margin: 30px;
     border: solid black 1pt;
 }
+
+@media only screen and (max-width: 500px){
+    #Reading{
+        width: 240px;
+        height: 240px;
+        margin: 10px;
+        margin-bottom: 250px;
+    }
+    #Book_card_1{
+        width: 350px;
+        height: 550px;
+    }
+    .first_box{
+        justify-content: space-between;
+    }
+    #Book_card_2{
+        width: 350px;
+        height: 550px;
+    }
+    #Book_card_3{
+        width: 350px;
+        height: 550px;
+    }
+}
