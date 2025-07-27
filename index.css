@@ -185,3 +185,58 @@ h1{
         height: 328px;
     }
 }
+
+@media only screen and (max-width: 500px){
+    .sun-box > img{
+        padding-left: 15px;
+        height: 60px;
+    }
+    .beach-box{
+        margin-top: 80px;
+    }
+    .beach-res-1{
+        height: 120px;
+    }
+    .beach-res-2{
+        height: 60px;
+    }
+    .beach-box > img{
+        padding-left: 20px;
+        padding-right: 50px;
+        padding-bottom: 0%;
+    }
+    .container{
+        height: 280px;
+        width: 70%;
+        margin-top: 150px;
+    }
+    .navigation{
+        height: 20px;
+        width: 70%;
+    }
+    h1{
+        font-size: large;
+    }
+    #skill{
+        height: 50px;
+    }
+    #book{
+        height: 50px;
+    }
+    #profile{
+        height: 65px;
+        padding-top: 10px;
+    }
+    #art{
+        height: 50px;
+    }
+    #writing{
+        height: 50px;
+    }
+    .btn{
+        height: 65px;
+    }
+    .waves{
+        height: 258px;
+    }
+}
